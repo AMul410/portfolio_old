@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwort-Resset</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 'Poppins',sans-serif;
+        }
+
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background: linear-gradient(135deg, #08b116, #eb9008);
+        }
+
+        .container{
+            max-width: 700px;
+            width: 100%;
+            background: #fff;
+            padding: 25px 30px;
+            border-radius: 10px;
+        }
+
+        .container .title{
+            font-size: 25px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .container .title::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+            background: linear-gradient(135deg, #08b116, #eb9008);
+        }
+
+        .container form .personal-details{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        form h2{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        form .labels{
+            font-size: 20px;
+        }
+
+        form .personal-details .input-box{
+            margin-bottom: 15px;
+            width: calc(100% / 2 - 20px);
+        }
+
+        .personal-details .input-box input{
+            height: 45px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding-left: 15px;
+            font-size: 16px;
+        }
+
+        .personal-details .input-box .first-name{
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .personal-details .input-box .family-name{
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .personal-details .input-box .email{
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .container form .security-questions{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        form .security-questions .input-box{
+            margin-bottom: 15px;
+            width: calc(100% / 2 - 20px);
+        }
+
+        .security-questions .input-box input{
+            height: 45px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding-left: 15px;
+            font-size: 16px;
+        }
+
+        .security-questions .input-box .question1{
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .security-questions .input-box .question2{
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .security-questions .input-box .question3{
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+    </style>
+            
+</head>
+<body>
+    <div class="container">
+        <div class="title"><h1>Password-Reset</h1></div>
+        <form action="#">
+            <h2>Personal-details</h2>
+            <div class="personal-details">
+                
+                <div class="input-box">
+                    <label class="first-name">First name:</label>
+                    <input type="text" placeholder="Enter your first name" required>
+                </div>
+                <div class="input-box">
+                    <label class="family-name">Family name:</label>
+                    <input type="text" placeholder="Enter your family name" required>
+                </div>
+                <div class="input-box">
+                    <label class="email">Email:</label>
+                    <input type="email" placeholder="Enter your Email address" required>
+                </div>
+            </div>
+            <h2>Security questions</h2>
+            <div class="security-questions">
+                    <div class="input-box">
+                    <label class="question1">What is your dream Car?</label>
+                    <input type="text" placeholder="Enter your dream Car" required>
+                </div>
+                <div class="input-box">
+                    <label class="question2">what is the worst thing you have ever done?</label>
+                    <input type="text" placeholder="Enter what you did?" required>
+                </div>
+                <div class="input-box">
+                    <label class="question3">Which is the worst film ever made?</label>
+                    <input type="text" placeholder="Enter worst film ever made" required>
+                </div>
+            </div>
+           
+            <div class="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Delete all entries">
+            </div>
+        </form>
+        </div>
+    </div>
+        
+</body>
+</html>

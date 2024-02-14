@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lutz und Grub: Academy</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../assets/stylesheets/robot_fonts.css">
+    <style>
+        html {
+            font-family: 'Transat Text', Roboto, Helvetica, Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        img.logo {
+            width: 155px;
+            height: 120px;
+            margin: .8rem;
+        }
+
+        nav.nav-wrapper {
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+            width: 1200px;
+            justify-content: space-between;
+        }
+
+        nav .flex-col {
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav .flex-row {
+            display: flex;
+            flex-direction: row;
+            align-self: end;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul>li {
+            margin: .5rem .5rem;
+        }
+
+        nav ul.text-regular > li {
+            margin: .5rem 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav a:hover {
+            color: rgb(160, 220, 240);
+        }
+
+        nav .flex-col>div {
+            font-size: .9em;
+        }
+
+        nav .flex-col>ul {
+            font-size: 1.3em;
+        }
+
+        nav ul.text-regular {
+            font-weight: 400;
+        }
+
+        nav ul.contact-icons a.linkBtnText {
+            padding: .4rem 1.9rem;
+            background-color: rgb(52, 57, 64);
+            color: white;
+            border: 1px solid black;
+            border-radius: 2rem;
+        }
+
+        nav ul.contact-icons a.linkBtnIcon {
+            padding: .6rem .5rem .3rem .5rem;
+            background-color: rgb(52, 57, 64);
+            color: white;
+            border: 1px solid black;
+            border-radius: 2rem;
+        }
+
+        .my-auto {
+            margin: auto 0;
+        }
+
+        ul.contact-icons svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        section.hero {
+            margin-bottom: 4rem;
+            display: flex;
+            flex-direction: row;
+        }
+
+        section.hero > div.hero-text {
+            max-width: 50vw;
+            margin: 0 4rem 0 auto;
+        }
+        section.hero > div.hero-image {
+            width: 50vw;
+        }
+        .hero-text p {
+            max-width: 45ch;
+        }
+        .hero-image > img {
+            object-fit: none;
+            height: auto;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav-wrapper">
+        <img class="logo" src="./lug-logo.png" alt="Logo">
+
+        <div class="flex-col">
+            <div class="flex-row">
+                <ul class="flex-row my-auto">
+                    <li><a href="">Wir</a></li>
+                    <li><a href="">Jobs</a></li>
+                    <li><a href="">digitale Niederlassung</a></li>
+                    <li><a href="">Deutsch</a></li>
+                </ul>
+                <ul class="flex-row contact-icons">
+                    <li>
+                        <a href="" class="linkBtnIcon">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2"
+                                class="inline-block h-4 w-4">
+                                <path
+                                    d="M32 24c0 2.21-1.79 4-4 4H4c-2.21 0-4-1.79-4-4V13.754l15.258 6.104c.238.096.488.142.742.142s.504-.046.742-.142L32 13.754V24Zm0-14.554-16 6.4-16-6.4V8c0-2.21 1.79-4 4-4h24c2.21 0 4 1.79 4 4v1.446Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="linkBtnIcon">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2"
+                                class="inline-block h-4 w-4">
+                                <path
+                                    d="m31.95 24.188-1.452 6.298A1.943 1.943 0 0 1 28.592 32C12.828 32 0 19.174 0 3.406a1.94 1.94 0 0 1 1.514-1.902L7.81.05a1.97 1.97 0 0 1 2.242 1.134l2.908 6.784c.34.8.11 1.73-.562 2.278l-3.364 2.756a21.85 21.85 0 0 0 9.97 9.968l2.754-3.362a1.944 1.944 0 0 1 2.28-.56l6.78 2.906a1.957 1.957 0 0 1 1.132 2.234Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="" class="linkBtnText">Kontakt</a></li>
+                </ul>
+            </div>
+            <ul class="flex-row text-regular">
+                <li><a href="">Lernende</a></li>
+                <li><a href="">Angebot</a></li>
+                <li><a href="">Kursnet</a></li>
+                <li><a href="">Unternehmenskunden</a></li>
+                <li><a href="">Methodenkompetenz</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Why?</h1>
+                <div>
+                    <p>Die digitale Transformation stellt Unternehmen, Mitarbeitende und Lernende vor große Herausforderungen. Jeder steht vor der Notwendigkeit, neue Kompetenzen aufzubauen -  die stetige Entwicklung digitaler Prozesse wird letztlich von Menschen vorangetrieben.</p>
+                    <p>Wir, die LUTZ + GRUB ACADEMY GmbH, befähigen zum adaptiven und lebenslangen Lernen, um individuell und kollektiv erfolgreich handeln zu können.</p>
+                    <p>Durch innovative und Kontext angepasste Lernmethoden erreichen Organisationen und Lernende Kompetenzen, um ihre beruflichen Ziele zu erreichen.</p>
+                    <p>Adaptive Growing® - be competent!</p>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../assets/images/die3fragezeichen.avif" alt="Lernparty@LUG"
+                width="1080"
+                height="720"
+                style="height: 720px; width: 1080px;">
+            </div>
+        </section>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Digitalisierung mit persönlichem Erfolg?</h1>
+                <div>
+                    <p>Lernen, Anpassungsfähigkeit und Schnelligkeit sind heute die Basis für Erfolg. Ohne ein entsprechendes Mindset, Skillset und Toolset ist dies nicht zu schaffen. Handlungskompetente Menschen unterstützen die Veränderung aktiv, tragen zum Erfolg bei, leben Eigeninitiative, übernehmen Verantwortung und managen sich selbst.</p>
+                    <p>In Zeiten der digitalen Transformation im Privatleben, wie auch im beruflichen Umfeld werden Prozesse digital unterstützt oder neu geschaffen. Die LUTZ + GRUB ACADEMY GmbH hilft Menschen und Unternehmen dabei, notwendige Kompetenzen im digitalen Umfeld zu identifizieren und aufzubauen - mit Spaß und Erfolg von der IT-Technologie über Prozesse bis zur Methodik!</p>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../assets/images/postit-laptop-hero.avif" alt="Big Business"
+                width="640"
+                height="640"
+                style="height: auto; width: 640px;">
+            </div>
+        </section>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Mit Spaß und Kompetenz zum Erfolg!</h1>
+                <p>Lernen besteht aus eigenmotivierter Wissensaufnahme, lösen von Herausforderungen und dem interaktiven Austausch in Gruppen. Dabei durchläuft jeder Lernende seine individuellen Lernpfade von der Ausgangsbasis, bisheriger Lernerfahrung, bis zur Zielsetzung mit seinen bevorzugten Kanälen zur Erreichung der relevanten Kompetenz. New Learning verbindet die Elemente Training, Coaching, Erfahrungsaufbau mit den digitalen Tools (Plattformen) und den persönlichen, wie digitalen Inhalten - genau der Lernpfad, den Lernende individuell benötigen, um schnell  notwendige Kompetenzen zu erlangen.</p>
+            </div>
+            <div class="hero-image">
+                <img src="../assets/images/shocking-coffee.avif" alt="Drinking Coffee"
+                width="640"
+                height="427"
+                style="width: 640px; height: auto;">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
