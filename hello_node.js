@@ -59,7 +59,7 @@ const num1 = 0.1;
 const num2 = 0.2;
 console.log(num1 + num2); // Floating-Point Rounding Error
 // Verhält sich genau wie im Dezimalsystem 
-// 0.33333 +0.333333 + 0.33333 = 1.
+// 0.33333 +0.333333 + 0.33333 = 1
 
 // String
 // Verkettungen von Chars - Char-Array in C#
@@ -81,6 +81,7 @@ console.log(variable_string);
  * 
  * Undefined bekommt meist, wenn eine Variable Deklariert aber Nicht Initialisiert ist oder es irgendeinen anderen Fehler von JS gibt.
  * NULL ist ein Signal, dass ich einen fehler beim Aufrufen einer Methode oder Funktion mit falschen Parametern oder ähnliches aufgerufen hat.
+ * Null verwendet man als Signal an andere Entwickler, dass man die Methode oder Funktion mit falschen Parameter oder ähnliches aufgerufen hat.
  */
 
 console.log(variable_string.toUpperCase());
@@ -125,6 +126,9 @@ class Weinbergschnecke {
         this.schleimmenge = schleimmenge;
     }
     get reichweite() {
+        if (this.schleimmenge < 10) {
+            return 0;        
+        }
         return this.schleimmenge / 10;
     }
     set tanken(menge) {
@@ -138,6 +142,11 @@ class Weinbergschnecke {
             console.log(`${this.name} hat nicht genug schleim und kann sich nicht mehr bewegen.`);
         }       
     }
+    schlunzen_essen(callbackfn) {
+        this.schlunzen();
+        callbackfn();
+        
+    }
 }
 
 const schnegge = new Weinbergschnecke("Josef", 30);
@@ -147,5 +156,56 @@ schnegge.schlunzen();
 schnegge.schlunzen();
 console.log(schnegge.schleimmenge);
 console.log(schnegge.reichweite);
+
 schnegge.tanken = 10;
 console.log(schnegge.schleimmenge);
+
+schnegge.schlunzen_essen(_ => {
+    console.log("Die Schnecke isst einen Salat");
+});
+
+
+schnegge.schlunzen_essen(_ => {
+    console.log("Blabla");
+});
+
+// Generator Funktions
+let my_array = [1,2,3,4,5];
+
+my_array.forEach(elem => {
+    console.log(elem);
+});
+
+let xy = 10;
+while (xy > 0) {
+    console.log(x);
+    xy = xy - 1;
+}
+//for (let i = 0; i < array.length; i++) {
+  //  const element = array[i];
+//}
+
+//array.forEach(element => {
+
+//});
+
+
+function* quadratzahlen_generator() {
+    let i = 1
+    while (true) {
+        yield i**2;
+        i += 1;
+    }
+}
+
+let number_generator = quadratzahlen_generator();
+console.log(number_generator);
+
+//number_generator.next().value;
+//console.log(number_generator.next().value);
+//console.log(number_generator.next().value);
+for (let i = 0; i < 5; i++) {
+    console.log(number_generator.next().value);
+}
+
+console.log(number_generator.next().value);
